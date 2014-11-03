@@ -1,0 +1,178 @@
+/**
+ * The Thankful modal, CSS.
+ * (c) 2014 Fat Panda, LLC. All rights reserved.
+ * @author Aaron Collegeman aaron@collegeman.net
+ * @version 0.0.0
+ */
+@turquoise: #1ABC9C;
+@greensea: #16A085;
+@emerald: #2ECC71;
+@nephritis: #27AE60;
+@peterriver: #3498DB;
+@belizehole: #2980B9;
+@amethyst: #9B59B6;
+@wisteria: #8E44AD;
+@wetasphalt: #34495E;
+@midnightblue: #2C3E50;
+@sunflower: #F1C40F;
+@carrot: #E67E22;
+@alizarin: #E74C3C;
+@clouds: #ECF0F1;
+@concrete: #95A5A6;
+@orange: #F39C12;
+@pumpkin: #D35400;
+@pomegranate: #C0392B;
+@silver: #BDC3C7;
+@asbestos: #7F8C8D;
+
+body {
+
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: @midnightblue;
+
+}
+
+.border-none {
+  border: 0 !important;
+}
+
+::-webkit-input-placeholder {
+  color: @silver;
+}
+
+:-moz-placeholder {
+  color: @silver;
+}
+
+::-moz-placeholder {
+  color: @silver;
+}
+
+:-ms-input-placeholder {
+  color: @silver;
+}
+
+
+.envelope {
+
+  position: fixed;
+  width: 620px;
+  height: 640px;
+  left: 50%;
+  margin-left: -310px;
+  bottom: 0;
+
+  .letter {
+
+    position: absolute;
+    width: 580px;
+    height: 640px;
+    left: 20px;
+    bottom: 0;
+    background-color: @clouds;
+
+
+    .row {
+
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid @silver;
+      font-size: 16px;
+      line-height: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+      a {
+
+        text-decoration: none;
+        color: @midnightblue;
+
+      }
+
+      .close {
+
+        color: @silver;
+        font-size: 22px;
+
+      }
+
+      .send {
+
+        color: @pomegranate;
+        text-transform: uppercase;
+        font-size: 18px;
+        float: right;
+
+      }
+
+      .give-gift {
+
+        color: @pomegranate;
+        font-size: 16px;
+        float: right;
+
+      }
+
+      label {
+
+        display: inline-block;
+        color: @silver;
+        width: 80px;
+
+      }
+
+      input {
+
+        border: 0;
+        background-color: @clouds;
+        color: @midnightblue;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        font-weight: normal;
+
+      }
+
+    }
+
+
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      background-color: @clouds;
+      color: @midnightblue;
+      padding: 0 20px;
+      height: 1024px;
+      outline: none;
+      font-size: 14px;
+    }
+
+
+  }
+
+  .foreground {
+
+    position: absolute;
+    bottom: 0;
+    width: 620px;
+    height: 256px;
+    background: url(../img/envelope-foreground.png) center bottom no-repeat;
+
+  }
+
+  .background {
+
+    position: absolute;
+    bottom: 0;
+    width: 620px;
+    height: 512px;
+    background: url(../img/envelope-background.png) center bottom no-repeat;
+
+  }
+
+}
