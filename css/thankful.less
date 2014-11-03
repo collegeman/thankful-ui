@@ -69,9 +69,9 @@ body {
     width: 580px;
     height: 640px;
     left: 20px;
-    bottom: 0;
+    bottom: -640px;
     background-color: @clouds;
-
+    transition: bottom 1s ease-out;
 
     .row {
 
@@ -155,10 +155,12 @@ body {
 
   }
 
+
   .foreground {
 
+    transition: bottom 1s ease-out;
     position: absolute;
-    bottom: 0;
+    bottom: -512px;
     width: 620px;
     height: 256px;
     background: url(../img/envelope-foreground.png) center bottom no-repeat;
@@ -167,12 +169,23 @@ body {
 
   .background {
 
+    transition: bottom 1s ease-out;
     position: absolute;
-    bottom: 0;
+    bottom: -512px;
     width: 620px;
     height: 512px;
     background: url(../img/envelope-background.png) center bottom no-repeat;
 
+  }
+
+}
+
+.envelope.revealed {
+
+  .letter,
+  .foreground,
+  .background {
+    bottom: 0px;
   }
 
 }

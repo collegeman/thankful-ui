@@ -8,31 +8,33 @@
   </head>
   <body data-thankful="modal">
 
-    <div class="envelope">
-      <div class="background"></div>
-      <div class="letter">
-        <div class="row">
-          <a href="#" class="close"><span class="fa fa-close"></span></a>
-          <a href="#" class="send">Send</a>
+    <div class="modal">
+      <div class="envelope">
+        <div class="background"></div>
+        <div class="letter">
+          <div class="row">
+            <a href="#" class="close" data-dismiss="modal"><span class="fa fa-close"></span></a>
+            <a href="#" class="send">Send</a>
+          </div>
+          <div class="row">
+            <label>To</label>
+            Kenneth Reitz
+          </div>
+          <div class="row">
+            <label>From</label>
+            <a href="#"><span class="fa fa-sign-in"></span></a>
+            <a href="#" class="give-gift">
+              <span class="fa fa-gift">
+              Give Gift
+            </a>
+          </div>
+          <div class="row border-none">
+            <input type="text" placeholder="Sending you some gratitude!">
+          </div>
+          <textarea placeholder="Type your note to Kenneth Reitz here."></textarea>
         </div>
-        <div class="row">
-          <label>To</label>
-          Kenneth Reitz
-        </div>
-        <div class="row">
-          <label>From</label>
-          <a href="#"><span class="fa fa-sign-in"></span></a>
-          <a href="#" class="give-gift">
-            <span class="fa fa-gift">
-            Give Gift
-          </a>
-        </div>
-        <div class="row border-none">
-          <input type="text" placeholder="Subject">
-        </div>
-        <textarea placeholder="Type your note to Kenneth Reitz here."></textarea>
+        <div class="foreground"></div>
       </div>
-      <div class="foreground"></div>
     </div>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

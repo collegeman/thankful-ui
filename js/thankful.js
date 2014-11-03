@@ -4,7 +4,7 @@
  * @author Aaron Collegeman aaron@collegeman.net
  * @version 0.0.0
  */
-!function(W, D) {
+!function(W, D, $) {
 
   'use strict';
 
@@ -123,8 +123,16 @@
 
     sendMessage('init');
 
-    
+    var $modal = $('.modal');
 
+    $modal.find('[data-dismiss="modal"]').click(function() {
+      sendMessage('destroy');
+      return false;
+    });
+
+    setTimeout(function() {
+      $modal.find('.envelope').addClass('revealed');
+    }, 500);
   }
 
   /**
@@ -310,4 +318,4 @@
   // bootstrap our init function
   on(W, 'load', onLoad);
 
-}(window, document);
+}(window, document, window.jQuery || {});
